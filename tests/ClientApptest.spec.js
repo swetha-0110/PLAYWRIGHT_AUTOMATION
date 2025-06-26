@@ -3,8 +3,8 @@ const{test,expect} = require('@playwright/test');
 test('Client App Login', async({page})=>
     {
 
-      const email ="";  
-      const productName ="ADIDAS ORIGINAL";
+      const email ="anshika@gmail.com";  
+      const productName ="IPHONE 13 PRO";
       const products = page.locator(".card-body");
       await page.goto("https://rahulshettyacademy.com/client");
        await page.locator("#userEmail").fill("anshika@gmail.com");
@@ -27,7 +27,7 @@ test('Client App Login', async({page})=>
          } 
          await page.locator("[routerlink*='cart']").click();
          await page.locator("div li").first().waitFor();
-        const boolean = await page.locator("h3:has-text('ADIDAS ORIGINAL')").isVisible()
+        const boolean = await page.locator("h3:has-text('IPHONE 13 PRO')").isVisible()
         expect(boolean).toBeTruthy();
         await page.locator("text=Checkout").click();
         await page.locator("[placeholder*='Country']").type("ind",{delay:100});
@@ -68,7 +68,11 @@ test('Client App Login', async({page})=>
      }
   const orderIddetails  = await page.locator(".col-text").textContent();
   expect(orderID.includes(orderIddetails)).toBeTruthy();
-  ABCD
+
+
+  
+
+ 
 
 
 

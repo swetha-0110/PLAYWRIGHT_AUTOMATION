@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "npx playwright test tests/WebAPIpart1.spec.js --headed"
+    "test": "npx playwright test tests/ClientApptest.spec.js --headed"
   },
   "keywords": [],
   "author": "",
@@ -15,6 +15,8 @@
     "allure-playwright": "^3.0.6"
   },
   "dependencies": {
-    "@cucumber/cucumber": "^11.0.1"
+    "@cucumber/cucumber": "^11.0.1",
+    "lodash": "^4.17.21",
+    "typescript": "^5.8.3"
   }
 }

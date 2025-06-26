@@ -24,11 +24,11 @@ const  config={
     {
       name: 'chrome',
       use: {
-      browserName : 'chromium ',   
+      browserName : 'chromium',   
       headless : false,
       screenshot : 'on',
       video: 'retain-on-failure'.
-      ignoreHttpsErrors:true,
+      ignoreHttpsErrors: true,
       permissions:['geolocation'],
       trace : 'on',
       viewport: {width:720,height:720}
